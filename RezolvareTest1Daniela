@@ -1,0 +1,42 @@
+item1. What is regression? What is retesting?
+A: Regression testing is executing once again the passed test cases for the main flows. And retesting si executing again failed test cases.
+item2. What is the relationship between the following: error, bug, defect, fault, failure.
+A: A bug or a defect appears when expected result is different than actual result.
+Error means the action that the developer does as to introduce defects.
+Failure means that a system is not working properly.
+Fault means a mistake.
+item3. Name the difference between agile & v-model. (Please specify some roles and cycles for these)
+A: Agile means that for each piece of the software product is taken into a sprint and finished.
+On V-model the entire software product is first developed and then tested (the big disadvantage of this model is when it comes to a change)
+item4. Please state what is black box testing? How about white box testing? You can also give an example.
+Black box testing means testing without having access to the code and white box testing implies having access to the code. Black box: boundary testing, equivalence partitioning, etc. White box testing: unit tests
+item5. In the images folder you have a login form. Create Test Cases for the given form.
+SIGN IN:
+-Check that the user can sign in with valid email and password
+-Check that user can't sign with valid email and incorrect password
+-Check that user can't sign in with invalid email and correct password
+-Check that user can't sign in with empty email field and correct password
+-Check that user can sign in with facebook account
+-Check that user has to add facebook login details when is not already logged in on that device
+-Check that user can sign in with gmail account
+-Check that user has to add gmail login details when is not already logged in on that device
+-Check that user can sign in with linkedIn account
+-Check that user has to add linkedIn login details when is not already logged in on that device
+-Check that "Forgot password" option is enabled and the user can tap on it
+CREATE ACCOUNT:
+-facebook, gmail and linkedIn - same test cases as for SIGN IN
+-Check an username with only one letter
+-Check an username with as many letter as you can (because we don't have requirements)
+-Check a password with only one letter
+Testing types: functional, non functional (security), black box (boundary testing)
+item6. Consider that you have found a defect in the form for the previous exercise. Create a bug report for it.
+Bug name: Sign in button is enabled when email and password fields are empty
+Steps to reproduce:
+Open the web page
+Go to Login area
+=> Expected results: "the Sign in button" in the Sign in area is not enabled and the user can't tap on it
+Actual results: "the Sign in button" in the Sign in area is enabled and when the user taps on it, the page refreshes
+Details:
+Environment: production, Internet explorer browser only
+Severity: medium
+Priority: medium
